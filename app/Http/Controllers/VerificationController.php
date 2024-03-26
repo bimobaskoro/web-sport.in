@@ -29,7 +29,7 @@ class VerificationController extends Controller
             $user->save();
     
             // Continue with the existing code for sending WhatsApp notification
-            $vonageCredentials = new VonageBasicCredentials("15fd38ff", "iJmxiN2nQwTEvh0f");
+            $vonageCredentials = new VonageBasicCredentials("899f7ec2", "1jPXwFgzPSv36yIB");
             $vonageClient = new VonageClient($vonageCredentials);
     
             $response = $vonageClient->sms()->send(
