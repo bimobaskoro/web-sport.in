@@ -43,7 +43,7 @@
                             <label for="post_type" class="form-label">Filter Type:</label>
                             <select name="post_type" id="post_type" class="form-select">
                                 <option value="all" {{ request('post_type') == 'all' ? 'selected' : '' }}>All Posts</option>
-                                <option value="latest" {{ request('post_type') == 'latest' ? 'selected' : '' }}>Latest</option>
+                                <option value="latest" {{ request('post_type') == 'latest' ? 'selected' : '' }}>News</option>
                                 <option value="oldest" {{ request('post_type') == 'oldest' ? 'selected' : '' }}>Oldest</option>
                                 <option value="yourPosts" {{ request('post_type') == 'yourPosts' ? 'selected' : '' }}>Your Posts</option>
                             </select>

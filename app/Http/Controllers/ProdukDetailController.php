@@ -114,8 +114,8 @@ class ProdukDetailController extends Controller
                 $newBooking->status = 'pending';
                 $newBooking->save();
                 
-                Config::$serverKey = 'SB-Mid-server-6Lr54It43EMttPYS-TjoRBAL';
-                Config::$clientKey = 'SB-Mid-client-XnTH_qZ1Jk5CvY6K';
+                Config::$serverKey = 'SB-Mid-server-TywME8uspZ3Ol6LDbbtRG8EL';
+                Config::$clientKey = 'SB-Mid-client-i3XqXL8U1U9fxNw1';
                 Config::$isProduction = false; // Set true untuk mode produksi
         
                 // Mendapatkan Snap Token (gunakan data booking yang telah disimpan)

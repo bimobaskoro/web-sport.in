@@ -72,7 +72,7 @@ class HistoryOrderController extends Controller
         $priceOrder = $request->input('price_order', 'asc');
         
         // Pastikan Anda menggunakan kolom 'price' dan bukan 'created_at'
-        $bookings->orderBy('price', $priceOrder);
+        $bookings->orderBy('total_price', $priceOrder);
 
         // Urutan berdasarkan waktu
         $timeOrder = $request->input('time_order', 'desc');

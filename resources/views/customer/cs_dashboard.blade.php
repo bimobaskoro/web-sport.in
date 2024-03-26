@@ -92,7 +92,7 @@
     <div class="row">
         @foreach($products as $product)
         <div class="col-2 product-field" data-type="{{ $product->type }}">
-            <div class="card" style="width: 15rem;">
+            <div class="card mt-5" style="width: 15rem;">
                 @if($product->imgUrl)
                 <a href="{{ route('productDetail', ['id' => $product->id]) }}">
                     <img src="{{ Storage::url('public/images-post/' . $product->imgUrl) }}" style="max-height: 130px;" class="card-img-top" alt="Product Image">
